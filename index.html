@@ -4,7 +4,7 @@
 <style> 
 
 body {
-    front-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -48,6 +48,33 @@ nav a{
     margin-bottom: 15px;
 }
 
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.services img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.team img {
+    width: 150px;
+    height: auto;
+    border-radius: 50px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 </style>
 </head>
 <body> 
@@ -72,10 +99,42 @@ nav a{
     </section>
 
     <section class="section">
-        <h2>Чим ми займаємося</h2> 
-
+        <h2>Чим ми займаємося</h2>
+        <div class="services">
+            <img src="images/service1.jpg" alt="Дизайн">
+            <img src="images/service2.jpg" alt="Розробка">
+            <img src="images/service3.jpg" alt="Брендинг">
+        </div> 
+    </section>
+    
+    <section class="section">
+        <h2>Наша команда</h2>
+        <div class="team">
+            <div>
+                <img src="images/Team4.jpg" alt="Ігор Денисенко">
+                <p>Ігор Денисенко - Product Developer</p>
+            </div>
+            <div>
+                <img src="images/Team3.jpg" alt="Ольга Роман">
+                <p>Ольга Роман - Frontend Developer</p>
+            </div>
+            <div>
+                <img src="images/Team2.jpg" alt="Микола Ткаченко">
+                <p>Микола Ткаченко - Marceting</p>
+            </div>
+            <div>
+                <img src="images/Team1.jpg" alt="Михайло Браноюк">
+                <p>Михайло Браноюк - UI Designer</p>
+            </div>
+        </div>
     </section>
 </main>
+
+<footer>
+    <p>&copy; 2024 WebStudio</p>
+    <p>м. Київ, вул. Протасів Яр, 36<p>
+    <p>+380 111 111 111</p>
+</footer>
 
 </body>
 </html>
