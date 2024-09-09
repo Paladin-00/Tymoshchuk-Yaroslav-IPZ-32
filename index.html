@@ -3,74 +3,104 @@
 <title>Page Title</title>
 <style> 
 
+*{
+    outline: 0px solid green !important;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 1600;
-    max-height: 2345;
+}
+.title-color{
+    color:#2196f3;
 }
 
 header {
 background-color: #ffffff;
-padding: 20px;
+width: auto;
+height: 80px;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center; 
 white-space: nowrap;
 border: 1px; 
+font-size: 26px;
 }
 
 header.logo{
-    font-size:24px;
     font-weight: bold;
 }
 nav a{
     margin:0 15px;
-    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+.div{
+    margin:0 15px;
     color: #333;
     font-size: 14px;
 }
 .hero {
-    background-color: #333;
+    background-color: #2f303a;
     color: white;
     text-align: center;
-    padding: 100 80px;
+    padding: 200px 20px;
 }
 .hero h1 {
-    font-size: 36px;
+    font-size: 44px;
     margin-bottom: 20px;
+}
+.b-color{
+    color: white;
+    background-color: #2196f3;
+    border-radius: 4px;
+    border-width: 0;
+    width: 200;
+    height: 50;
+    font-size: 16px;
+}
+.text-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+.text-form{
+    width: 20%;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
 }
 .section {
     padding: 50px 20px;
     text-align: center;
+    background-color: #f9f9f9;
+}
+.section-1 {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f4fa;
 }
 .section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-.section p {
-    margin-bottom: 15px;
-}
-
 .services {
     display: flex;
     justify-content: center;
+    width: auto;
     gap: 20px;
 }
 .services img {
     width: 300px;
     height: auto;
-    border-radius: 10px;
-}
-.team text{
-    margin-top: 10px;
- 
+    
 }
 .team {
     text-align: center;
     width: 200px;
     background-color: #f9f9f9;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     justify-content: center;
     display: flex;
 }
@@ -83,28 +113,24 @@ nav a{
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-.text-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 40px;
-    background-color: #f9f9f9;
-}
-.text-form{
-    width: 20%;
-    text-align: left;
-}
-.b-color{
-    color: white;
-    background-color: aqua;
-    padding: 20px;
+    
 }
 footer {
-    background-color: #333;
+    background-color: #2f303a;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 20px;
+    font-size: 26;
+}
+footer p {
+    font-size: 14;
+}
+.team-member {
+    background-color: #f9f9f9ff;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 </style>
@@ -112,13 +138,13 @@ footer {
 <body> 
 
 <header> 
-    <div size="72" class="logo">WebStudio</div>
+    <div class="logo"><b><span class="title-color">Web</span>Studio</b></div>
     <nav a>
         <a herf="#">Про нас</a>
         <a herf="#">Послуги</a>
         <a herf="#">Контакти</a>
     </nav a>
-    <div>
+    <div class="div">
         <a href="mailto:jariksuperlol6@gmail.com">Jariksuperlol6@gmail.com</a>
         <span>+380 111 111 111</span>
     </div>
@@ -172,40 +198,32 @@ footer {
     </section>
     
 
-    <section class="section">
+    <section class="section-1">
       <div >
         <h2>Наша команда</h2>
       <div class="team-container">  
-        <div>
+        <div class="team-member">
             <img class="team img" src="images/Team4.jpg" alt="Ігор Денисенко">
-            <div class="team text">
                 <h3>Ігор Денисенко</h3>
                 <p>Product Developer</p>
-            </div>
         </div>
 
-        <div >
+        <div class="team-member">
             <img class="team img" src="images/Team3.jpg" alt="Ольга Роман">
-            <div class="team text">
                 <h3>Ольга Роман</h3>
                 <p>Frontend Developer</p>
-            </div>
         </div>
 
-        <div >
+        <div class="team-member">
             <img class="team img" src="images/Team2.jpg" alt="Микола Ткаченко">
-            <div class="team text">
                 <h3>Микола Ткаченко</h3>
                 <p>Marceting</p>
-            </div>
         </div>
 
-        <div >
+        <div class="team-member">
             <img class="team img" src="images/Team1.jpg" alt="Михайло Браноюк">
-            <div class="team text">
                 <h3>Михайло Браноюк</h3>
                 <p>UI Designer</p>
-            </div>
         </div>
 
       </div>
@@ -214,8 +232,9 @@ footer {
 </main>
 
 <footer>
-    <p>&copy; 2024 WebStudio</p>
+    <h4><b><span class="title-color">Web</span>Studio</b></h4>
     <p>м. Київ, вул. Протасів Яр, 36<p>
+    <p><a href="mailto:jariksuperlol6@gmail.com">Jariksuperlol6@gmail.com</a></p>
     <p>+380 111 111 111</p>
 </footer>
 
