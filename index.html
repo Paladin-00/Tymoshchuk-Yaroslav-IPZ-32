@@ -4,142 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style> 
-
-*{
-    outline: 0px solid green !important;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.title-color{
-    color:#2196f3;
-}
-
-header {
-background-color: #ffffff;
-width: auto;
-height: 80px;
-display: flex;
-justify-content: space-around;
-align-items: center; 
-white-space: nowrap;
-border: 1px; 
-font-size: 26px;
-}
-
-header.logo{
-    font-weight: bold;
-}
-
-ul{
-    color: #333;
-    font-size: 14px;
-    list-style-type: none;
-}
-li{
-    display: inline;
-    margin:0 15px;
-}
-.section ul{
-    color: #333;
-    font-size: 14px;
-    list-style-type: none;
-    display: flex;
-}
-.section li{
-    flex: 1;
-    margin:0 15px;
-}
-.hero {
-    background-color: #2f303a;
-    color: white;
-    text-align: center;
-    padding: 200px 20px;
-}
-.hero h1 {
-    font-size: 44px;
-    margin-bottom: 20px;
-}
-.b-color{
-    color: white;
-    background-color: #2196f3;
-    border-radius: 4px;
-    border-width: 0;
-    width: 200;
-    height: 50;
-    font-size: 16px;
-}
-.section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    justify-content: center;
-}
-.section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-footer {
-    background-color: #2f303a;
-    text-align: left;
-    padding: 20px;
-    font-size: 26;
-}
-footer ul{
-    color: white;
-    justify-content: left;
-    font-size: 14px;
-    list-style-type: none;
-}
-footer li{
-    flex: 1;
-    margin:0 15px;
-}
-footer p {
-    font-size: 14;
-}
-.section-1{
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    justify-content: center;
-}
-.section-1 ul{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-.section-1 li{
-    background-color: #f9f9f9ff;
-    width: 270px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-</style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body> 
 
-<header> 
+<header class="header"> 
     <a href="index.html"><img src="images/webstudio.svg" width="145" height="31" alt="webstudio"></a>
     <nav>
         <ul>
-           <li><a href="#">Про нас</a></li>
-           <li><a href="#">Послуги</a></li>
-           <li><a href="#">Контакти</a></li>
+           <li><a class="link-header" href="index.html">Студія</a></li>
+           <li><a class="link-header" href="portfolio.html">Портфоліо</a></li>
+           <li><a class="link-header" href="#">Контакти</a></li>
         </ul>
     </nav>
     <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380 111 111 111">+380111111111</a></li>
+        <li><a class="link-header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link-header-contact" href="tel:+380 111 111 111">+380111111111</a></li>
     </ul>
 </header>
 
 <main>
     <section class="hero"> 
-       <h1>Ефективні рішення для вашого бізнесу</h1>
+       <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
        <button type="button" class="b-color">Замовити послугу</button>
     </section>
 
@@ -185,7 +74,7 @@ footer p {
     </section>
     
 
-    <section class="section-1">
+    <section class="section-team">
         <h2>Наша команда</h2>
         <ul>
             <li>
@@ -215,13 +104,13 @@ footer p {
     </section>
 </main>
 
-<footer>
+<footer class="footer">
     <a href="index.html"><img src="images/webstudiofooter.svg" width="145" height="31" alt="webstudio"></a>
     <address>
         <p>м. Київ, вул. Протасів Яр, 36</p>
         <ul>
-           <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-           <li><a href="tel:+380 111 111 111">+380111111111</a></li>
+           <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+           <li><a class="link-footer" href="tel:+380 111 111 111">+380111111111</a></li>
         </ul>
     </address>
 </footer>
