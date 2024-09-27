@@ -72,7 +72,7 @@ body {
 .section-portfolio li{
     background-color: var(--color-1);
     padding: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
     margin: 15px;
     width: 300;
     height: auto;
@@ -126,14 +126,20 @@ body {
     font-weight: 700;
     letter-spacing: 0.06em;
     line-height: 1.9em;
-    font-family: Impact;
-    padding: 10px 20px;
+    font-family: inherit;
+    padding: 10px;
+    min-width: 200px;
+    max-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .b-color:hover,
 .b-color:focus{
     background-color: #188ce8;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 10px;
+    min-width: 216px;
+    max-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .section {
     padding: 50px 20px;
@@ -184,11 +190,7 @@ body {
     background-color: var(--color-2);
     justify-content: center;
 
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    line-height: 1.17em;
+    
 }
 .section-team ul{
     display: flex;
@@ -200,6 +202,13 @@ body {
     width: 270px;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-team h2{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.17em;
 }
 .section-team h3{
     color:var(--color-3);
@@ -218,13 +227,19 @@ body {
     line-height: 1.17em;
 }
 
-.div{
+.filter{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 94px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.6em;
 }
-.div button{
+.filter button{
     background-color: var(--color-2);
     padding: 10px 20px;
     font-size: 16px;
@@ -235,8 +250,8 @@ body {
     border: 0px;
     border-radius: 4px;
 }
-.div button:hover,
-.div button:focus{
+.filter button:hover,
+.filter button:focus{
     background-color: var(--color-5);
     cursor: pointer;
     padding: 10px 20px;
