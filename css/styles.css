@@ -1,10 +1,12 @@
 *{
     outline: 0px solid green !important;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
     font-style: normal;
     
 }
@@ -16,32 +18,48 @@ body {
     --color-5:#2196f3;
     --color-6:#2f303a;
     --color-7:#188ce8;
+    --color-8:#ececec;
+    --color-9:#eeeeee;
 }
+/* -----------------------------header-start------------------------- */
 .header {
     background-color: var(--color-1);
-    width: auto;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    white-space: nowrap;
-    border-bottom: 1px; 
-    
+    border-bottom: 1px solid;
+    border-color: var(--color-8); 
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 .header nav{
     padding-left: 94px;
 }
-.header ul {
+.header nav > ul {
     font-size: 14px;
     list-style-type: none;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.17em;
     gap: 50px;
+    flex-direction: row;
+    
+}
+.header ul{
+    font-size: 14px;
+    list-style-type: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17em;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
 }
 .header li{
-    display: inline;
-    padding: 0 15px;
+    /* display: flex; */
+    /* padding-right: auto; */
 }
 .link-header {
     text-decoration: none;
@@ -61,61 +79,21 @@ body {
 .link-header-contact:focus{
     color: var(--color-5);
 } 
-
-.section-portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.section-portfolio ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    list-style-type: none;
-    align-content: center;
-    
-}
-.section-portfolio li{
-    background-color: var(--color-1);
-    padding: 0px;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-    margin: 15px;
-    width: 300;
-    height: auto;
-}
-.section-portfolio ul li img {
-    width: 300;
-    height: auto; 
-}
-.section-portfolio h3{
-    color: var(--color-3);
-    font-size: 18px;
-    padding-left: 20px;
-    font-weight:  700;
-    letter-spacing:  0.06em;
-    line-height:   2em;
-    margin: 0px;
-    margin: 15px 0px 0px 0px;
-}
-.section-portfolio p{
-    color: var(--color-4);
-    font-size: 16px;
-    padding-left: 20px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    line-height: 1.9em;
-    margin: 0px 0px 15px 0px;
-}
+/* -----------------------------header-end------------------------- */
+/* -----------------------------hero-start---------------------------- */
 .hero {
     background-color: var(--color-6);
     color: var(--color-1);
     text-align: center;
+    justify-items: center;
+    display: flex;
+    max-height: 600px;
     padding: 200px 20px;
 }
 .hero h1 {
+    margin-bottom: 30px;
+    max-width: 700px;
     font-size: 44px;
-    margin-bottom: 20px;
     font-weight: 900;
     letter-spacing: 0.06em;
     line-height: 1.36em;
@@ -144,8 +122,11 @@ body {
     max-height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* -----------------------------hero-end---------------------------- */
+/* ----------------------------------features-start--------------------------------------- */
 .section {
-    padding: 50px 20px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     text-align: center;
     background-color: var(--color-1);
     justify-content: center;
@@ -153,19 +134,12 @@ body {
 .section ul{
     list-style-type: none;
     display: flex;
+    gap: 30px;
 }
 .section li{
-    flex: 1;
-    margin:0 15px;
-}
-.section h2 {
-    color: var(--color-3);
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    line-height: 1.17em;
+    /* flex: 1; */
+    /* margin:0 15px; */
+    max-width: 270px;
 }
 .section h3{
     color: var(--color-3);
@@ -174,6 +148,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.17em;
+    margin-bottom: 10px;
 }
 .section p{
     color: var(--color-4);
@@ -183,9 +158,33 @@ body {
     letter-spacing: 0.03em;
     line-height: 1.7em;
 }
-
+/* ------------------------------------features-end--------------------------------------- */
+/* ----------------------------------work-start--------------------------------------- */
+.section-work {
+    padding-bottom: 94px;
+    text-align: center;
+    background-color: var(--color-1);
+    justify-content: center;
+}
+.section-work ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+.section-work h2 {
+    color: var(--color-3);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.17em;
+    margin-bottom: 50px;
+}
+/* ------------------------------------work-end--------------------------------------- */
+/* ----------------------------------team-start-------------------------------------- */
 .section-team{
-    padding: 50px 20px;
+    padding: 94px 0;
     text-align: center;
     background-color: var(--color-2);
     justify-content: center;
@@ -193,15 +192,18 @@ body {
 .section-team ul{
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
+    list-style-type: none;  
+    gap: 30px;
 }
 .section-team li{
     background-color: var(--color-1);
     width: 270px;
     text-align: center;
+    border-radius: 4px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .section-team h2{
+    padding-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -213,21 +215,23 @@ body {
     font-weight: 500;
     letter-spacing: 0.03em;
     line-height: 1.17em;
+    padding: 30px 0 10px 0;
 }
 .section-team p{
+    padding-bottom: 30px;
     color: var(--color-4);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.17em;
 }
-
+/* ------------------------------------team-end--------------------------------------- */
 .filter{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 94px;
-
+    margin-bottom: 34px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -253,11 +257,62 @@ body {
     color: var(--color-1);
 }
 
-
+.section-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 94px ;
+}
+.section-portfolio ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    /* align-content: center; */
+    
+}
+.section-portfolio li{
+    background-color: var(--color-1);
+    border: 1px  solid;
+    border-color: var(--color-9);
+    /* padding: 0px; */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    /* margin: 15px; */
+    /* width: 300; */
+    /* height: auto; */
+}
+.section-portfolio ul li img {
+    /* width: 300; */
+    /* height: auto;  */
+}
+.section-portfolio h3{
+    color: var(--color-3);
+    font-size: 18px;
+    padding: 0 24px;
+    font-weight:  700;
+    letter-spacing:  0.06em;
+    line-height:   2em;
+    margin: 0px;
+    margin: 20px 0px 4px 0px;
+}
+.section-portfolio p{
+    color: var(--color-4);
+    font-size: 16px;
+    padding: 0 24px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.9em;
+    margin: 0px 0px 20px 0px;
+}
+/* -------------------------------------footer-start----------------------------------------- */
 .footer {
     background-color: var(--color-6);
     text-align: left;
-    padding: 20px;
+    padding: 60px 0;
+}
+.footer address{
+    padding-top: 28px;
 }
 .footer p{
     color: var(--color-1);
@@ -266,6 +321,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.14em;
+    font-style: normal;
 }
 .footer ul {
     color: var(--color-1);
@@ -277,7 +333,8 @@ body {
 }
 .footer li{
     display: flex;
-    margin:0 15px;
+    font-style: normal;
+    
 }
 .link-footer {
     text-decoration: none;
@@ -288,6 +345,7 @@ body {
 .link-footer:focus{
     color: var(--color-5);
 } 
+/* ---------------------------------------footer-end----------------------------------------- */
 .container {
     max-width: 1200px;
     margin-left: auto;
