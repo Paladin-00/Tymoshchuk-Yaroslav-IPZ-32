@@ -10,22 +10,23 @@ body {
     font-style: normal;
     
 }
+h1, h2, h3, p {margin: 0;}
 :root {
-    --color-1:#ffffff;
-    --color-2:#f5f4fa;
-    --color-3:#212121;
-    --color-4:#757575;
-    --color-5:#2196f3;
-    --color-6:#2f303a;
-    --color-7:#188ce8;
-    --color-8:#ececec;
-    --color-9:#eeeeee;
+    --white:#ffffff;
+    --very-light-gray:#f5f4fa;
+    --dark-gray:#212121;
+    --medium-gray:#757575;
+    --blue:#2196f3;
+    --dark-blue-gray:#2f303a;
+    --bright-blue:#188ce8;
+    --light-gray:#ececec;
+    --pale-gray:#eeeeee;
 }
 /* -----------------------------header-start------------------------- */
 .header {
-    background-color: var(--color-1);
+    background-color: var(--white);
     border-bottom: 1px solid;
-    border-color: var(--color-8); 
+    border-color: var(--light-gray); 
     .container {
         display: flex;
         align-items: center;
@@ -34,7 +35,7 @@ body {
     }
 }
 .header nav{
-    padding-left: 94px;
+    margin-left: 94px;
 }
 .header nav > ul {
     font-size: 14px;
@@ -44,7 +45,6 @@ body {
     line-height: 1.17em;
     gap: 50px;
     flex-direction: row;
-    
 }
 .header ul{
     font-size: 14px;
@@ -63,32 +63,31 @@ body {
 }
 .link-header {
     text-decoration: none;
-    color: var(--color-3);
+    color: var(--dark-gray);
     list-style-type: none;
 }
 .link-header:hover,
 .link-header:focus{
-    color: var(--color-5);
+    color: var(--blue);
 }
 .link-header-contact {
     text-decoration: none;
-    color: var(--color-4);
+    color: var(--medium-gray);
     list-style-type: none;
 }
 .link-header-contact:hover,
 .link-header-contact:focus{
-    color: var(--color-5);
+    color: var(--blue);
 } 
 /* -----------------------------header-end------------------------- */
 /* -----------------------------hero-start---------------------------- */
 .hero {
-    background-color: var(--color-6);
-    color: var(--color-1);
+    background-color: var(--dark-blue-gray);
+    color: var(--white);
     text-align: center;
     justify-items: center;
     display: flex;
-    max-height: 600px;
-    padding: 200px 20px;
+    padding: 200px 0;
 }
 .hero h1 {
     margin-bottom: 30px;
@@ -99,8 +98,8 @@ body {
     line-height: 1.36em;
 }
 .b-color{
-    color: var(--color-1);
-    background-color: var(--color-5);
+    color: var(--white);
+    background-color: var(--blue);
     border-radius: 4px;
     border-width: 0;
     font-size: 16px;
@@ -115,11 +114,8 @@ body {
 }
 .b-color:hover,
 .b-color:focus{
-    background-color: var(--color-7);
+    background-color: var(--bright-blue);
     cursor: pointer;
-    padding: 10px;
-    min-width: 216px;
-    max-height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* -----------------------------hero-end---------------------------- */
@@ -128,7 +124,7 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
-    background-color: var(--color-1);
+    background-color: var(--white);
     justify-content: center;
 }
 .section ul{
@@ -142,7 +138,7 @@ body {
     max-width: 270px;
 }
 .section h3{
-    color: var(--color-3);
+    color: var(--dark-gray);
     text-align: left;
     font-size: 14px;
     font-weight: 700;
@@ -151,7 +147,7 @@ body {
     margin-bottom: 10px;
 }
 .section p{
-    color: var(--color-4);
+    color: var(--medium-gray);
     text-align: left;
     font-size: 14px;
     font-weight: 400;
@@ -163,7 +159,7 @@ body {
 .section-work {
     padding-bottom: 94px;
     text-align: center;
-    background-color: var(--color-1);
+    background-color: var(--white);
     justify-content: center;
 }
 .section-work ul{
@@ -172,7 +168,7 @@ body {
     gap: 30px;
 }
 .section-work h2 {
-    color: var(--color-3);
+    color: var(--dark-gray);
     text-align: center;
     margin-bottom: 50px;
     font-size: 36px;
@@ -186,8 +182,11 @@ body {
 .section-team{
     padding: 94px 0;
     text-align: center;
-    background-color: var(--color-2);
+    background-color: var(--very-light-gray);
     justify-content: center;
+}
+.section-team li > div {
+    padding: 30px;
 }
 .section-team ul{
     display: flex;
@@ -196,36 +195,37 @@ body {
     gap: 30px;
 }
 .section-team li{
-    background-color: var(--color-1);
+    background-color: var(--white);
     width: 270px;
     text-align: center;
     border-radius: 4px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .section-team h2{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.17em;
 }
 .section-team h3{
-    color:var(--color-3);
+    color:var(--dark-gray);
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
     line-height: 1.17em;
-    padding: 30px 0 10px 0;
+    margin-bottom: 10px;
 }
 .section-team p{
-    padding-bottom: 30px;
-    color: var(--color-4);
+    /* padding-bottom: 30px; */
+    color: var(--medium-gray);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.17em;
 }
 /* ------------------------------------team-end--------------------------------------- */
+/* ---------------------------filter-start-------------------------- */
 .filter{
     display: flex;
     justify-content: center;
@@ -238,7 +238,7 @@ body {
     line-height: 1.6em;
 }
 .filter button{
-    background-color: var(--color-2);
+    background-color: var(--very-light-gray);
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
@@ -246,22 +246,27 @@ body {
     line-height: 1.6em;
     border: 0px;
     border-radius: 4px;
+    font-family: inherit;
 }
 .filter button:hover,
 .filter button:focus{
-    background-color: var(--color-5);
+    background-color: var(--blue);
     cursor: pointer;
     padding: 10px 20px;
     gap: 10;
     border: 0px;
-    color: var(--color-1);
+    color: var(--white);
 }
-
+/* ---------------------------filter-end--------------------------- */
+/* ---------------------------portfolio-start--------------------------- */
 .section-portfolio{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 94px ;
+}
+.section-portfolio li > div{
+    padding: 24px 0;
 }
 .section-portfolio ul{
     display: flex;
@@ -269,53 +274,44 @@ body {
     justify-content: center;
     gap: 30px;
     list-style-type: none;
-    /* align-content: center; */
-    
 }
 .section-portfolio li{
-    background-color: var(--color-1);
+    background-color: var(--white);
     border: 1px  solid;
-    border-color: var(--color-9);
-    /* padding: 0px; */
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-    /* margin: 15px; */
-    /* width: 300; */
-    /* height: auto; */
+    border-color: var(--pale-gray);
 }
 .section-portfolio ul li img {
-    /* width: 300; */
-    /* height: auto;  */
+    width: 100%;
 }
 .section-portfolio h3{
-    color: var(--color-3);
+    color: var(--dark-gray);
     font-size: 18px;
-    padding: 0 24px;
+    padding: 0 20px;
     font-weight:  700;
     letter-spacing:  0.06em;
     line-height:   2em;
-    margin: 0px;
-    margin: 20px 0px 4px 0px;
+    margin-bottom: 10px;
 }
 .section-portfolio p{
-    color: var(--color-4);
+    color: var(--medium-gray);
     font-size: 16px;
-    padding: 0 24px;
+    padding: 0 20px;
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.9em;
-    margin: 0px 0px 20px 0px;
 }
+/* ---------------------------portfolio-start--------------------------- */
 /* -------------------------------------footer-start----------------------------------------- */
 .footer {
-    background-color: var(--color-6);
+    background-color: var(--dark-blue-gray);
     text-align: left;
     padding: 60px 0;
 }
 .footer address{
-    padding-top: 28px;
+    margin-top: 28px;
 }
 .footer p{
-    color: var(--color-1);
+    color: var(--white);
     font-size: 14px;
     list-style-type: none;
     font-weight: 400;
@@ -324,7 +320,7 @@ body {
     font-style: normal;
 }
 .footer ul {
-    color: var(--color-1);
+    color: var(--white);
     font-size: 14px;
     list-style-type: none;
     font-weight: 400;
@@ -334,7 +330,7 @@ body {
 .footer li{
     display: flex;
     font-style: normal;
-    
+    margin-top: 12px;
 }
 .link-footer {
     text-decoration: none;
@@ -343,7 +339,7 @@ body {
 }
 .link-footer:hover,
 .link-footer:focus{
-    color: var(--color-5);
+    color: var(--blue);
 } 
 /* ---------------------------------------footer-end----------------------------------------- */
 .container {
