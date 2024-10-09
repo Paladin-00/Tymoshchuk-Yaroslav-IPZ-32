@@ -332,7 +332,6 @@ h1, h2, h3, p {margin: 0;}
     font-style: normal;
 }
 .footer li:not(:last-child){
-    
     margin-bottom: 12px;
 }
 .link-footer {
