@@ -107,9 +107,8 @@ h1, h2, h3, p {margin: 0;}
     letter-spacing: 0.06em;
     line-height: 1.9em;
     font-family: inherit;
-    padding: 10px;
-    min-width: 200px;
-    max-height: 50px;
+    padding: 10px 20px;
+    max-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .b-color:hover,
@@ -230,16 +229,17 @@ h1, h2, h3, p {margin: 0;}
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 94px;
+    padding-top: 94px;
     margin-bottom: 34px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
     line-height: 1.6em;
+    list-style-type: none; 
 }
 .filter button{
     background-color: var(--very-light-gray);
-    padding: 10px 20px;
+    padding: 10px 24px;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.03em;
@@ -247,6 +247,7 @@ h1, h2, h3, p {margin: 0;}
     border: 0px;
     border-radius: 4px;
     font-family: inherit;
+    max-height: 38px;
 }
 .filter button:hover,
 .filter button:focus{
@@ -279,6 +280,7 @@ h1, h2, h3, p {margin: 0;}
     background-color: var(--white);
     border: 1px  solid;
     border-color: var(--pale-gray);
+    max-width: 370px;
 }
 .section-portfolio ul li img {
     width: 100%;
@@ -308,7 +310,7 @@ h1, h2, h3, p {margin: 0;}
     padding: 60px 0;
 }
 .footer address{
-    margin-top: 28px;
+    padding-top: 28px;
 }
 .footer p{
     color: var(--white);
@@ -318,6 +320,7 @@ h1, h2, h3, p {margin: 0;}
     letter-spacing: 0.03em;
     line-height: 1.14em;
     font-style: normal;
+    margin-bottom: 12px;
 }
 .footer ul {
     color: var(--white);
@@ -326,11 +329,11 @@ h1, h2, h3, p {margin: 0;}
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.14em;
-}
-.footer li{
-    display: flex;
     font-style: normal;
-    margin-top: 12px;
+}
+.footer li:not(:last-child){
+    
+    margin-bottom: 12px;
 }
 .link-footer {
     text-decoration: none;
