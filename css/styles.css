@@ -21,8 +21,9 @@ h1, h2, h3, p {margin: 0;}
     --bright-blue:#188ce8;
     --light-gray:#ececec;
     --pale-gray:#eeeeee;
+    --soft-gray:#f5f4fa;
 }
-/* -----------------------------header-start------------------------- */
+/* ---header-start------------------------- */
 .header {
     background-color: var(--white);
     border-bottom: 1px solid;
@@ -57,10 +58,7 @@ h1, h2, h3, p {margin: 0;}
     flex-direction: row;
     margin-left: auto;
 }
-.header li{
-    /* display: flex; */
-    /* padding-right: auto; */
-}
+
 .link-header {
     text-decoration: none;
     color: var(--dark-gray);
@@ -79,11 +77,18 @@ h1, h2, h3, p {margin: 0;}
 .link-header-contact:focus{
     color: var(--blue);
 } 
-/* -----------------------------header-end------------------------- */
-/* -----------------------------hero-start---------------------------- */
+/* ---header-end------------------------- */
+/* ---hero-start---------------------------- */
 .hero {
+    background-image: url('../images/bgteam.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    
     background-color: var(--dark-blue-gray);
     color: var(--white);
+    align-items: center;
     text-align: center;
     justify-items: center;
     display: flex;
@@ -117,8 +122,8 @@ h1, h2, h3, p {margin: 0;}
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-/* -----------------------------hero-end---------------------------- */
-/* ----------------------------------features-start--------------------------------------- */
+/* ---hero-end---------------------------- */
+/* ---section-start--------------------------------------- */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -135,6 +140,11 @@ h1, h2, h3, p {margin: 0;}
     /* flex: 1; */
     /* margin:0 15px; */
     max-width: 270px;
+}
+.section li > div{
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
 }
 .section h3{
     color: var(--dark-gray);
@@ -153,8 +163,8 @@ h1, h2, h3, p {margin: 0;}
     letter-spacing: 0.03em;
     line-height: 1.7em;
 }
-/* ------------------------------------features-end--------------------------------------- */
-/* ----------------------------------work-start--------------------------------------- */
+/* ---section-end--------------------------------------- */
+/* ---work-start--------------------------------------- */
 .section-work {
     padding-bottom: 94px;
     text-align: center;
@@ -176,8 +186,8 @@ h1, h2, h3, p {margin: 0;}
     line-height: 1.17em;
     margin-bottom: 50px;
 }
-/* ------------------------------------work-end--------------------------------------- */
-/* ----------------------------------team-start-------------------------------------- */
+/* ---work-end--------------------------------------- */
+/* ---team-start-------------------------------------- */
 .section-team{
     padding: 94px 0;
     text-align: center;
@@ -223,8 +233,8 @@ h1, h2, h3, p {margin: 0;}
     letter-spacing: 0.03em;
     line-height: 1.17em;
 }
-/* ------------------------------------team-end--------------------------------------- */
-/* ---------------------------filter-start-------------------------- */
+/* ---team-end--------------------------------------- */
+/* ---filter-start-------------------------- */
 .filter{
     display: flex;
     justify-content: center;
@@ -258,8 +268,8 @@ h1, h2, h3, p {margin: 0;}
     border: 0px;
     color: var(--white);
 }
-/* ---------------------------filter-end--------------------------- */
-/* ---------------------------portfolio-start--------------------------- */
+/* ---filter-end--------------------------- */
+/* ---portfolio-start--------------------------- */
 .section-portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -302,8 +312,8 @@ h1, h2, h3, p {margin: 0;}
     letter-spacing: 0.03em;
     line-height: 1.9em;
 }
-/* ---------------------------portfolio-start--------------------------- */
-/* -------------------------------------footer-start----------------------------------------- */
+/* ---portfolio-start--------------------------- */
+/* ---footer-start----------------------------------------- */
 .footer {
     background-color: var(--dark-blue-gray);
     text-align: left;
@@ -343,7 +353,7 @@ h1, h2, h3, p {margin: 0;}
 .link-footer:focus{
     color: var(--blue);
 } 
-/* ---------------------------------------footer-end----------------------------------------- */
+/* ---footer-end----------------------------------------- */
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -351,3 +361,12 @@ h1, h2, h3, p {margin: 0;}
     padding-left: 15px;
     padding-right: 15px;   
 }
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: black;
+  }
