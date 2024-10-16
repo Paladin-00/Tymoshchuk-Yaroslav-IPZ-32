@@ -23,8 +23,12 @@
           </ul>
         </nav>
         <ul>
-            <li><a class="link-header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link-header-contact" href="tel:+380 111 111 111">+380111111111</a></li>
+            <li><a class="link-header-contact" href="mailto:info@devstudio.com">
+                <svg width="16" height="12"><use href="./images/icons.svg#icon-email"></svg>
+                info@devstudio.com</a></li>
+            <li><a class="link-header-contact" href="tel:+380 111 111 111">
+                <svg width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></svg>
+                +380111111111</a></li>
         </ul>
     </div>
 </header>
@@ -32,8 +36,8 @@
 <main>
     <section class="hero"> 
         <div class="container">
-       <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-       <button type="button" class="b-color">Замовити послугу</button>
+            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button type="button" class="b-color">Замовити послугу</button>
        </div>
     </section>
 
@@ -41,6 +45,9 @@
         <div class="container">
         <ul>
             <li>
+                <div>
+                    <img src="images/antenna.svg" alt="Антена">
+                </div>
                 <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p>Ідейні міркування, і навіть початок
                    повсякденної роботи з формування позиції.
@@ -48,6 +55,9 @@
             </li>
 
             <li>
+                <div>
+                    <img src="images/clock.svg" alt="Годиник">
+                </div>
                 <h3>ПУНКТУАЛЬНІСТЬ</h3>
                 <p>Завдання організації, особливо рамки
                    і місце навчання кадрів тягне у себе.
@@ -55,6 +65,9 @@
             </li>
 
             <li>
+                <div>
+                    <img src="images/diagram.svg" alt="Діаграма">
+                </div>
                 <h3>ПЛАНУВАННЯ</h3>
                 <p>Так само консультація з широким
                    активом значною мірою зумовлює.
@@ -62,6 +75,9 @@
             </li>
 
             <li>
+                <div>
+                    <img src="images/astronaut.svg" alt="Астронавт">
+                </div>
                 <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p>Значимість цих проблем настільки
                    очевидна, що реалізація планових завдань.
@@ -87,55 +103,155 @@
     <div class="container">
 
          <h2>Наша команда</h2>
-        <ul>
-            <li>
+        <ul class="card">
+            <li class="card-li">
                 <img src="images/Team4.jpg" width="270" height="260" alt="Ігор Денисенко">
                 <div>
                 <h3>Ігор Денисенко</h3>
                 <p>Product Developer</p>
+                <ul class="socmerg">
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-instagram-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-facebook-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
+                    </a></li>
+                </ul>
                 </div>
             </li>
 
-            <li>
-                
+            <li class="card-li">
                 <img src="images/Team3.jpg" width="270" height="260" alt="Ольга Роман">
                 <div>
                 <h3>Ольга Роман</h3>
                 <p>Frontend Developer</p>
+                <ul class="socmerg">
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-instagram-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-facebook-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
+                    </a></li>
+                </ul>
                 </div>
             </li>
 
-            <li>
+            <li class="card-li">
                 <img src="images/Team2.jpg" width="270" height="260" alt="Микола Ткаченко">
                 <div>
                 <h3>Микола Ткаченко</h3>
                 <p>Marceting</p>
+                <ul class="socmerg">
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-instagram-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-facebook-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
+                    </a></li>
+                </ul>
                 </div>
             </li>
 
-            <li>
+            <li class="card-li">
                 <img src="images/Team1.jpg" width="270" height="260" alt="Михайло Браноюк">
                 <div>
                 <h3>Михайло Браноюк</h3>
                 <p>UI Designer</p>
+                <ul class="socmerg">
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-instagram-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-facebook-1"></svg>
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
+                    </a></li>
+                </ul>
                 </div>
             </li>
         </ul>
     </div>   
     </section>
+
+    <section class="customer">
+        <div class="container">
+            <h2>Постійні клієнти</h2>
+            <ul>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo"></svg>
+                </a></li>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo1"></svg>
+                </a></li>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo2"></svg>
+                </a></li>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo3"></svg>
+                </a></li>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo4"></svg>
+                </a></li>
+                <li><a href="#">
+                    <svg width="106" height="60"><use href="./images/icons.svg#icon-Logo5"></svg>
+                </a></li>
+            </ul>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <a href="index.html"><img src="images/webstudiofooter.svg" width="145" height="31" alt="webstudio"></a>
-    <address>
-        <p>м. Київ, вул. Протасів Яр, 36</p>
-        <ul>
-           <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-           <li><a class="link-footer" href="tel:+380 111 111 111">+380111111111</a></li>
+    <div class="container">
+    <div>
+        <a href="index.html"><img src="images/webstudiofooter.svg" width="145" height="31" alt="webstudio"></a>
+        <address>
+            <p>м. Київ, вул. Протасів Яр, 36</p>
+            <ul class="info">
+            <li><a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link-footer" href="tel:+380 111 111 111">+380111111111</a></li>
+            </ul>
+        </address>
+    </div>
+    <div class="media">
+        <h3>ПРИЄДНУЙТЕСЬ</h3>
+        <ul class="socmedia">
+            <li><a href="#">
+                <svg width="20" height="20"><use href="./images/icons.svg#icon-instagram-1"></svg>
+                </a></li>
+            <li><a href="#">
+                <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></svg>
+                </a></li>
+            <li><a href="#">
+                <svg width="20" height="20"><use href="./images/icons.svg#icon-facebook-1"></svg>
+                </a></li>
+            <li><a href="#">
+                <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
+                </a></li>
         </ul>
-    </address>
-  </div>
+    </div>
+    </div>
 </footer>
 
 </body>
