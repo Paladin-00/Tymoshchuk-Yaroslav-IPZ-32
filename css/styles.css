@@ -583,27 +583,54 @@ margin: none;
     overflow: auto; 
     /* Додає прокрутку, якщо потрібно */
     background-color: rgba(0, 0, 0, 0.4); /* Злегка прозорий фон */
+   
 }
 
 
 .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: 221px auto;
     width: 528px;
     height: 581px;
     border-radius: 4px; 
+
+    animation: slideUp 0.5s ease-out;
+    bottom: 0;
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--light-bluish-gray);
+    /* float: right; */
+    /* font-size: 28px; */
+    /* font-weight: bold; */
+    padding: 9px;
+    background-color: var(--white);
+    border: 1px solid;
+    max-height: 30px;
+    max-width: 30px;
+    border-radius: 50%;
+    svg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .close:hover,
 .close:focus {
     color: black;
-    text-decoration: none;
+    /* text-decoration: none; */
     cursor: pointer;
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
