@@ -8,26 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <script src="jstest.js"></script> -->
 </head>
 <body>
     <header class="header"> 
         <div class="container">
-        <a href="index.html"><img src="images/webstudio.svg" width="145" height="31" alt="webstudio"></a>
-        <nav>
-            <ul>
-               <li><a class="link-header" href="index.html">Студія</a></li>
-               <li><a class="link-header" href="portfolio.html">Портфоліо</a></li>
-               <li><a class="link-header" href="#">Контакти</a></li>
+            <a href="index.html"><img src="images/webstudio.svg" width="145" height="31" alt="webstudio"></a>
+            <nav>
+              <ul class="header-nav">
+                <li><a href="index.html">Студія</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+                <li><a href="mailto:info@devstudio.com">
+                    <svg width="16" height="12"><use href="./images/icons.svg#icon-email"></svg>
+                    info@devstudio.com</a></li>
+                <li><a href="tel:+380 111 111 111">
+                    <svg width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></svg>
+                    +380111111111</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a class="link-header-contact" href="mailto:info@devstudio.com">
-                <svg width="16" height="12"><use href="./images/icons.svg#icon-email"></svg>
-                info@devstudio.com</a></li>
-            <li><a class="link-header-contact" href="tel:+380 111 111 111">
-                <svg width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></svg>
-                +380111111111</a></li>
-        </ul>
         </div>
     </header>
     <main>
@@ -43,68 +44,113 @@
         </div>
         <div class="section-portfolio">
           <div class="container">
-            <ul>
+           <ul>
                 <li>
-                    <img src="images/website-1.jpg" width="370" height="294" alt="вебсайт">
-                    <div>
-                    <h3>Технокрад</h3>
-                    <p>Веб-сайт</p>
+                    <div class="image-overlay">
+                        <img src="images/website-1.jpg" width="370" height="294" alt="вебсайт">
+                    <div class="overlay-text">
+                        <!-- <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p> -->
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Технокрад</h3>
+                        <p>Веб-сайт</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/design-1.jpg" width="370" height="294" alt="дизайн">
-                    <div>
-                    <h3>Постер New Orlean vs Golden Star</h3>
-                    <p>Дизайн</p>
+                    <div class="image-overlay">
+                        <img src="images/design-1.jpg" width="370" height="294" alt="дизайн">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Постер New Orlean vs Golden Star</h3>
+                        <p>Дизайн</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/addition-1.jpg" width="370" height="294" alt="додаток">
-                    <div>
-                    <h3>Ресторан Seafood</h3>
-                    <p>Додаток</p>
+                    <div class="image-overlay">
+                        <img src="images/addition-1.jpg" width="370" height="294" alt="додаток">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Ресторан Seafood</h3>
+                        <p>Додаток</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/marketing-1.jpg" width="370" height="294" alt="маркетинг">
-                    <div>
-                    <h3>Проект Prime</h3>
-                    <p>Маркетинг</p>
+                    <div class="image-overlay">
+                        <img src="images/marketing-1.jpg" width="370" height="294" alt="маркетинг">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Проект Prime</h3>
+                        <p>Маркетинг</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/addition-2.jpg" width="370" height="294" alt="додаток">
-                    <div>
-                    <h3>Проект Boxes</h3>
-                    <p>Додаток</p>
+                    <div class="image-overlay">
+                        <img src="images/addition-2.jpg" width="370" height="294" alt="додаток">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Проект Boxes</h3>
+                        <p>Додаток</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/website-2.jpg" width="370" height="294" alt="вебсайт">
-                    <div>
-                    <h3>Inspiration has no Borders</h3>
-                    <p>Веб-сайт</p>
+                    <div class="image-overlay">
+                        <img src="images/website-2.jpg" width="370" height="294" alt="вебсайт">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Inspiration has no Borders</h3>
+                        <p>Веб-сайт</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/design-2.jpg" width="370" height="294" alt="дизайн">
-                    <div>
-                    <h3>Видання Limited Edition</h3>
-                    <p>Дизайн</p>
+                    <div class="image-overlay">
+                        <img src="images/design-2.jpg" width="370" height="294" alt="дизайн">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Видання Limited Edition</h3>
+                        <p>Дизайн</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/marketing-2.jpg" width="370" height="294" alt="маркетинг">
-                    <div>
-                    <h3>Проект LAB</h3>
-                    <p>Маркетинг</p>
+                    <div class="image-overlay">
+                        <img src="images/marketing-2.jpg" width="370" height="294" alt="маркетинг">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Проект LAB</h3>
+                        <p>Маркетинг</p>
                     </div>
                 </li>
                 <li>
-                    <img src="images/addition-3.jpg" width="370" height="294" alt="додаток">
-                    <div>
-                    <h3>Growing Business</h3>
-                    <p>Додаток</p>
+                    <div class="image-overlay">
+                        <img src="images/addition-3.jpg" width="370" height="294" alt="додаток">
+                    <div class="overlay-text">
+                        <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                    </div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Growing Business</h3>
+                        <p>Додаток</p>
                     </div>
                 </li>
             </ul>
