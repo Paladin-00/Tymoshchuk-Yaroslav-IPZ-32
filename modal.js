@@ -5,7 +5,7 @@ const span = document.getElementsByClassName("close")[0];
 
 // Відкриваємо модальне вікно при натисканні на кнопку
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 // Закриваємо модальне вікно при натисканні на хрестик
