@@ -603,20 +603,111 @@ margin: none;
     background-color: #fefefe;
     width: 528px;
     height: 581px;
-    border-radius: 4px; 
+    border-radius: 4px;
+    padding: 40px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 
     animation: slideUp 0.5s ease-out;
     bottom: 0;
+    h2 {
+        color: var(--dark-gray);
+        font-size: 18px;
+	    margin-bottom: 12px;
+	    text-align: center;
+    }
+    p {
+        color: var(--dark-gray); 
+        font-size: 14px;
+        font-weight:  500;
+        letter-spacing:  0.03em;
+        line-height:   1.7em;
+        color: var(--medium-gray);
+        text-align: left;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="text"], input[type="email"] {
+        padding-left: 35px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 96px;
+        resize: none;
+    }
+}
+.name-group {
+	position: relative;
+}
+.name-group svg {
+	position: absolute;
+	top: 60%;
+	left: 12px;
+	transform: translateY(-50%);
+	color: #666;
+}
+.phone-group {
+	position: relative;
+}
+.phone-group svg {
+	position: absolute;
+	top: 60%;
+	left: 12px;
+	transform: translateY(-50%);
+	color: #666;
+}
+.mail-group {
+	position: relative;
+}
+.mail-group svg {
+	position: absolute;
+	top: 40%;
+	left: 12px;
+	transform: translateY(-50%);
+	color: #666;
+}
+.checkbox-group {
+	display: flex;
+	align-items: center;
+    margin: 20px 0 30px 0;
+}
+.checkbox-group input[type="checkbox"] {
+	margin-right: 10px;
+}
+.checkbox-group label {
+	font-size: 14px;
+    font-weight:  500;
+    letter-spacing:  0.03em;
+    line-height:   1.7em;
+    color: var(--medium-gray);
+}
+.checkbox-group a {
+	color: var(--blue);
+	text-decoration: none;
+}
+.send-button{
+	padding: 10px 52px;
+	background-color: var(--blue);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-size: 16px;
+    font-weight:  700;
+    letter-spacing:  0.06em;
+    line-height:   1.8em;
 }
 
-.close {
+.open {
     position: absolute;
     top: 8px;
     right: 8px;
     color: var(--light-bluish-gray);
-    /* float: right; */
-    /* font-size: 28px; */
-    /* font-weight: bold; */
     padding: 9px;
     background-color: var(--white);
     border: 1px solid;
@@ -624,17 +715,20 @@ margin: none;
     max-width: 30px;
     border-radius: 50%;
     svg{
+        transition: color var(--transition);
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+.open:hover,
+.open:focus {
     /* text-decoration: none; */
     cursor: pointer;
+    svg{
+        color: var(--blue);
+    }
 }
 @keyframes slideUp {
     from {
@@ -644,3 +738,57 @@ margin: none;
         transform: translateY(0);
     }
 }
+.subscribe {
+    h3{
+        padding-top: 15px;
+        color: var(--white);
+        font-size: 14px;
+        font-weight:  700;
+        letter-spacing:  0.03em;
+        line-height:   1.14em;
+        margin-bottom: 20px;
+    }
+    svg{
+       color: var(--white); 
+       margin-left: 10px;
+       align-items: center;
+    }
+    input[type="email"] {
+        font-size: 16px;
+        font-weight:  500;
+        letter-spacing:  0.03em;
+        line-height:   1.4em;
+
+        padding: 15px 16px;
+        border: 1px solid;
+        color: var(--medium-gray);
+        background-color: var(--dark-blue-gray);
+        border-radius: 4px;
+        width: 358px;
+        max-height: 50px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.sub{
+    color: var(--white);
+    font-size: 16px;
+    font-weight:  700;
+    letter-spacing:  0.06em;
+    line-height:   1.8em;
+
+    background-color: var(--blue); 
+    border-radius: 4px;
+    border: 0;
+    color: var(--white);
+    padding: 10px 28px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    max-height: 50px;
+}
+

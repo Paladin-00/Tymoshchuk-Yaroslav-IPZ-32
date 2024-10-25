@@ -3,56 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Модальне вікно</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="csstest.css">
-    <script src="./JS/nav_underline.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="header-logo"
-                ><img
-                    src="./images/webstudio.svg"
-                    alt="WebStudio"
-                    width="148"
-                    height="31"
-                />
-            </a>
-            <nav>
-                <ul class="header-nav-list">
-                    <li><a href="index.html">Студія</a></li>
-                    <li><a href="portfolio.html">Портфоліо</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <!-- Просраний розмір svg -->
-            <ul class="contacts">
-                <li>
-                    <a href="mailto:info@devstrudio.com">
-                        <svg width="16" height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>
-                        info@devstrudio.com
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+380994814090">
-                        <img
-                            src="./images/social/smartphone.svg"
-                            alt="phone number"
-                            width="10"
-                            height="16"
-                        />
-                        <svg width="10" height="16">
-                            <use
-                                href="./images/icons.svg#icon-smartphone"
-                            ></use>
-                        </svg>
-                        +38 099 481 40 90
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+
+    <div class="form-container">
+        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <p>Ім'я</p>
+                <input type="text">
+                <svg width="12" height="12">
+                    <use href="./images/icons.svg#icon-person">
+                </svg>
+                </input>
+            </div>
+
+            <div class="form-group">
+                <p>Телефон</p>
+                <input type="text">
+                <svg width="14" height="14">
+                    <use href="./images/icons.svg#icon-phone">
+                </svg>
+                </input>
+            </div>
+            <p>Пошта</p>
+            <div class="form-group">
+                <input type="email" >
+                <svg width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail">
+                </svg>
+                </input>
+            </div>
+
+            <div class="form-group">
+                <textarea name="comment" placeholder="Коментар" required></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="agreement" required>
+                <label>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+            </div>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+
 </body>
 </html>
