@@ -634,10 +634,22 @@ margin: none;
         padding-left: 35px;
         margin-bottom: 10px;
     }
+    input[type="text"]:focus, 
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: var(--blue);
+        
+    }
     textarea {
         height: 96px;
         resize: none;
     }
+    
+}
+.name-group:focus-within svg,
+.phone-group:focus-within svg,
+.mail-group:focus-within svg {
+    color: var(--blue);
 }
 .name-group {
 	position: relative;
@@ -648,7 +660,9 @@ margin: none;
 	left: 12px;
 	transform: translateY(-50%);
 	color: #666;
+    /* transition: color var(--transition); */
 }
+
 .phone-group {
 	position: relative;
 }
@@ -658,7 +672,9 @@ margin: none;
 	left: 12px;
 	transform: translateY(-50%);
 	color: #666;
+    transition: color var(--transition);
 }
+
 .mail-group {
 	position: relative;
 }
@@ -668,7 +684,9 @@ margin: none;
 	left: 12px;
 	transform: translateY(-50%);
 	color: #666;
+    transition: color var(--transition);
 }
+
 .checkbox-group {
 	display: flex;
 	align-items: center;
@@ -686,7 +704,7 @@ margin: none;
 }
 .checkbox-group a {
 	color: var(--blue);
-	text-decoration: none;
+	
 }
 .send-button{
 	padding: 10px 52px;
@@ -695,14 +713,17 @@ margin: none;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-
+    
     font-size: 16px;
     font-weight:  700;
     letter-spacing:  0.06em;
     line-height:   1.8em;
 }
-
+.send-button:hover,
+.send-button:focus{
+    background-color: var(--bright-blue);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
 .open {
     position: absolute;
     top: 8px;

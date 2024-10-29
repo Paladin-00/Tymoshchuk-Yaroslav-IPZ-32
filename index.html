@@ -51,7 +51,7 @@
                     <form action="#" method="post">
                         <div class="name-group">
                             <p>Ім'я</p>
-                            <input type="text">
+                            <input type="text" required>
                             <svg width="12" height="12">
                                 <use href="./images/icons.svg#icon-person">
                             </svg>
@@ -60,7 +60,7 @@
 
                         <div class="phone-group">
                             <p>Телефон</p>
-                            <input type="text">
+                            <input type="text" required>
                             <svg width="14" height="14">
                                 <use href="./images/icons.svg#icon-phone">
                             </svg>
@@ -68,7 +68,7 @@
                         </div>
                         <p>Пошта</p>
                         <div class="mail-group">
-                            <input type="email" >
+                            <input type="email" required>
                             <svg width="16" height="12">
                                 <use href="./images/icons.svg#icon-mail">
                             </svg>
@@ -80,11 +80,11 @@
                         </div>
 
                         <div class="checkbox-group">
-                            <input type="checkbox" name="agreement" required>
-                            <label>Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+                            <input type="checkbox" name="agreement" id="id_agreement" required>
+                            <label for="id_agreement">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
                         </div>
 
-                        <button type="button" class="send-button">Відправити</button>
+                        <button type="submit" class="send-button">Відправити</button>
                     </form>
         
             <script src="modal.js"></script>
