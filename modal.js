@@ -1,7 +1,7 @@
 // Отримуємо елементи
 const modal = document.getElementById("Modal");
 const btn = document.getElementById("openModal");
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("open")[0];
 
 // Відкриваємо модальне вікно при натисканні на кнопку
 btn.onclick = function() {
