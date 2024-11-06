@@ -1,0 +1,41 @@
+.customer {
+    text-align: center;
+    padding: 94px 0;
+
+    &__text {
+        margin-bottom: 50px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.17em;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+
+        &-item {
+            padding: 16px 32px;
+            border-radius: 4px;
+            border: 1px solid;
+            max-height: 92px;
+            color: var(--light-bluish-gray);
+            transition: color var(--transition);
+
+            svg {
+                color: var(--light-bluish-gray);
+                transition: color var(--transition);
+            }
+
+            &:hover,
+            &:focus {
+                color: var(--blue);
+
+                svg {
+                    color: var(--blue);
+                }
+            }
+        }
+    }
+}
