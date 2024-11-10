@@ -1,7 +1,7 @@
 .team {
     padding: 94px 0;
     text-align: center;
-    background-color: var(--very-light-gray);
+    background-color: $very-light-gray;
     justify-content: center;
 
     &__title {
@@ -20,7 +20,7 @@
     }
 
     &__member {
-        background-color: var(--white);
+        background-color: $white;
         width: 270px;
         text-align: center;
         border-radius: 4px;
@@ -35,7 +35,7 @@
     }
 
     &__name {
-        color: var(--dark-gray);
+        color: $dark-gray;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.03em;
@@ -44,7 +44,7 @@
     }
 
     &__role {
-        color: var(--medium-gray);
+        color: $medium-gray;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.03em;
@@ -60,22 +60,22 @@
         gap: 10px;
 
         svg {
-            color: var(--light-bluish-gray);
+            color: $light-bluish-gray;
         }
     }
 
     &__social-item {
         padding: 12px;
         border-radius: 50%;
-        background-color: var(--white);
-        transition: color var(--transition), background-color var(--transition);
+        background-color: $white;
+        transition: color $transition, background-color $transition;
 
         &:hover,
         &:focus {
-            background-color: var(--blue);
+            background-color: $blue;
 
             svg {
-                color: var(--white);
+                color: $white;
             }
         }
     }

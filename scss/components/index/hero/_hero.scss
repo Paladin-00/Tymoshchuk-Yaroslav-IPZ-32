@@ -3,8 +3,8 @@
     background-size: 1600px;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--dark-blue-gray);
-    color: var(--white);
+    background-color: $dark-blue-gray;
+    color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,8 +21,8 @@
     }
 
     &__button {
-        color: var(--white);
-        background-color: var(--blue);
+        color: $white;
+        background-color: $blue;
         border-radius: 4px;
         border: none;
         font-size: 16px;
@@ -32,11 +32,11 @@
         font-family: inherit;
         padding: 10px 20px;
         text-align: center;
-        transition: color var(--transition), box-shadow var(--transition);
+        transition: color $transition, box-shadow $transition;
 
         &:hover,
         &:focus {
-            background-color: var(--bright-blue);
+            background-color: $bright-blue;
             cursor: pointer;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -47,17 +47,17 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    color: var(--light-bluish-gray);
+    color: $light-bluish-gray;
     padding: 9px;
-    background-color: var(--white);
+    background-color: $white;
     border: 1px solid;
     max-height: 30px;
     max-width: 30px;
     border-radius: 50%;
     
     svg {
-        color: var(--dark-gray);
-        transition: color var(--transition);
+        color: $dark-gray;
+        transition: color $transition;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -68,7 +68,7 @@
         cursor: pointer;
 
         svg {
-            color: var(--blue);
+            color: $blue;
         }
     }
 }

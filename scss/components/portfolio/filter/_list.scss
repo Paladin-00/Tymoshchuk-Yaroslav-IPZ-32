@@ -9,13 +9,13 @@
     }
 
     &__item {
-        background-color: var(--white);
-        border: 1px solid var(--pale-gray);
+        background-color: $white;
+        border: 1px solid $pale-gray;
         max-width: 370px;
         position: relative;
         overflow: hidden;
         padding: 0;
-        transition: top var(--transition), opacity var(--transition);
+        transition: top $transition, opacity $transition;
 
         &:hover .portfolio__overlay,
         &:focus .portfolio__overlay {
@@ -38,11 +38,11 @@
         opacity: 0;
         padding: 64px 24px;
         box-sizing: border-box;
-        transition: top var(--transition), opacity var(--transition);
+        transition: top $transition, opacity $transition;
     }
 
     &__overlay-text {
-        color: var(--white);
+        color: $white;
         font-size: 18px;
         line-height: 1.5em;
         padding: 0 20px;
@@ -55,7 +55,7 @@
     }
 
     &__title {
-        color: var(--dark-gray);
+        color: $dark-gray;
         font-size: 18px;
         font-weight: 700;
         padding: 0 20px;
@@ -65,7 +65,7 @@
     }
 
     &__type {
-        color: var(--medium-gray);
+        color: $medium-gray;
         font-size: 16px;
         padding: 0 20px;
         font-weight: 400;
@@ -80,7 +80,7 @@
 }
 
 .image-overlay {
-    transition: box-shadow var(--transition);
+    transition: box-shadow $transition;
 
     &:hover,
     &:focus {

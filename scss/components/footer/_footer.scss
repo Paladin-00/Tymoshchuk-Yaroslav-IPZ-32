@@ -1,9 +1,9 @@
 .footer {
-    background-color: var(--dark-blue-gray);
+    background-color: $dark-blue-gray;
     text-align: left;
     padding: 60px 0;
 
-    &__container {
+    .container {
         display: flex;
         gap: 100px;
     }
@@ -13,7 +13,7 @@
     }
 
     &__address-text {
-        color: var(--white);
+        color: $white;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 0.03em;
@@ -23,7 +23,7 @@
     }
 
     &__info {
-        color: var(--white);
+        color: $white;
         font-size: 14px;
         list-style-type: none;
         font-weight: 400;
@@ -38,11 +38,11 @@
         &-link {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.6);
-            transition: color var(--transition);
+            transition: color $transition;
 
             &:hover,
             &:focus {
-                color: var(--blue);
+                color: $blue;
             }
         }
     }
@@ -52,7 +52,7 @@
 
         &-text {
             padding-top: 15px;
-            color: var(--white);
+            color: $white;
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 0.03em;
@@ -68,7 +68,7 @@
             gap: 10px;
 
             svg {
-                color: var(--white);
+                color: $white;
             }
         }
 
@@ -76,11 +76,11 @@
             padding: 12px;
             border-radius: 100%;
             background-color: rgba(255, 255, 255, 0.1);
-            transition: color var(--transition), background-color var(--transition);
+            transition: color $transition, background-color $transition;
 
             &:hover,
             &:focus {
-                background-color: var(--blue);
+                background-color: $blue;
             }
         }
     }
@@ -94,7 +94,7 @@
 
         &-text {
             padding-top: 15px;
-            color: var(--white);
+            color: $white;
             font-size: 14px;
             font-weight: 700;
             letter-spacing: 0.03em;
@@ -109,20 +109,20 @@
             line-height: 1.4em;
             padding: 13px 16px;
             border: 1px solid;
-            color: var(--medium-gray);
-            background-color: var(--dark-blue-gray);
+            color: $medium-gray;
+            background-color: $dark-blue-gray;
             border-radius: 4px;
             width: 358px;
         }
     }
 
     &__sub {
-        color: var(--white);
+        color: $white;
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.06em;
         line-height: 1.8em;
-        background-color: var(--blue);
+        background-color: $blue;
         border-radius: 4px;
         border: 0;
         padding: 10px 25px;
@@ -130,11 +130,11 @@
         display: flex;
         align-items: center;
         cursor: pointer;
-        transition: var(--transition);
+        transition: $transition;
 
         &:hover,
         &:focus {
-            background-color: var(--bright-blue);
+            background-color: $bright-blue;
         }
     }
 }
