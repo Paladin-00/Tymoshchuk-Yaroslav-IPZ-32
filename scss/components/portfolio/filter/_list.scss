@@ -5,7 +5,6 @@
         justify-content: center;
         gap: 30px;
         list-style: none;
-        padding-bottom: 94px;
     }
 
     &__item {
@@ -19,14 +18,14 @@
 
         &:hover .portfolio__overlay,
         &:focus .portfolio__overlay {
-            top: 0;
+            transform: translateY(0);
             opacity: 1;
         }
     }
 
     &__overlay {
         position: absolute;
-        top: -100%;
+        top: 0%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -38,7 +37,8 @@
         opacity: 0;
         padding: 64px 24px;
         box-sizing: border-box;
-        transition: top $transition, opacity $transition;
+        transform: translateY(-50%);
+        transition: transform $transition, opacity $transition;
     }
 
     &__overlay-text {

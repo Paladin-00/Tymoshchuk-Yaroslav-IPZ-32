@@ -86,10 +86,25 @@
     }
 
     &__subscribe {
+        width: 100%;
         &-form {
             display: flex;
             align-items: center;
             gap: 10px;
+            
+
+            input[type="email"] {
+                flex-grow: 1;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.03em;
+                line-height: 1.4em;
+                padding: 13px 16px;
+                border: 1px solid;
+                color: $medium-gray;
+                background-color: $dark-blue-gray;
+                border-radius: 4px;
+            }
         }
 
         &-text {
@@ -102,18 +117,8 @@
             margin-bottom: 20px;
         }
 
-        input[type="email"] {
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0.03em;
-            line-height: 1.4em;
-            padding: 13px 16px;
-            border: 1px solid;
-            color: $medium-gray;
-            background-color: $dark-blue-gray;
-            border-radius: 4px;
-            width: 358px;
-        }
+        
+        
     }
 
     &__sub {

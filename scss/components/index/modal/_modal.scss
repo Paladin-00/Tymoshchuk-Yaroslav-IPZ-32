@@ -15,7 +15,6 @@
         position: relative;
         background-color: #fefefe;
         width: 528px;
-        height: 581px;
         border-radius: 4px;
         padding: 40px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -42,11 +41,15 @@
         textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid;
+            border-color: #ccc;
             border-radius: 4px;
+            transition: border-color $transition;
 
-            &:focus {
+            &:focus-within,
+            &:hover {
                 border-color: $blue;
+                outline: none;
             }
         }
 
@@ -73,7 +76,7 @@
 
     svg {
         position: absolute;
-        top: 60%;
+        top: 63%;
         left: 12px;
         transform: translateY(-50%);
         color: $dark-gray;
@@ -91,6 +94,7 @@
         color: $medium-gray;
         text-align: left;
         display: flex;
+        margin-bottom: 4px;
     }
 }
 
@@ -104,6 +108,7 @@
         color: $medium-gray;
         text-align: left;
         display: flex;
+        margin-bottom: 4px;
     }
 }
 
