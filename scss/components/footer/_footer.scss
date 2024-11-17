@@ -1,0 +1,145 @@
+.footer {
+    background-color: $dark-blue-gray;
+    text-align: left;
+    padding: 60px 0;
+
+    .container {
+        display: flex;
+        gap: 100px;
+    }
+
+    &__address {
+        padding-top: 28px;
+    }
+
+    &__address-text {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        line-height: 1.14em;
+        margin-bottom: 12px;
+        font-style: normal;
+    }
+
+    &__info {
+        color: $white;
+        font-size: 14px;
+        list-style-type: none;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        line-height: 1.14em;
+        font-style: normal;
+
+        &-item:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            transition: color $transition;
+
+            &:hover,
+            &:focus {
+                color: $blue;
+            }
+        }
+    }
+
+    &__media {
+        margin: 0;
+
+        &-text {
+            padding-top: 15px;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.17em;
+            margin-bottom: 20px;
+        }
+
+        &-list {
+            list-style-type: none;
+            justify-content: center;
+            display: flex;
+            max-height: 44px;
+            gap: 10px;
+
+            svg {
+                color: $white;
+            }
+        }
+
+        &-item {
+            padding: 12px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: color $transition, background-color $transition;
+
+            &:hover,
+            &:focus {
+                background-color: $blue;
+            }
+        }
+    }
+
+    &__subscribe {
+        width: 100%;
+        &-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+
+            input[type="email"] {
+                flex-grow: 1;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.03em;
+                line-height: 1.4em;
+                padding: 13px 16px;
+                border: 1px solid;
+                color: $medium-gray;
+                background-color: $dark-blue-gray;
+                border-radius: 4px;
+            }
+        }
+
+        &-text {
+            padding-top: 15px;
+            color: $white;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            line-height: 1.14em;
+            margin-bottom: 20px;
+        }
+
+        
+        
+    }
+
+    &__sub {
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.8em;
+        background-color: $blue;
+        border-radius: 4px;
+        border: 0;
+        padding: 10px 25px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+            background-color: $bright-blue;
+        }
+    }
+}
