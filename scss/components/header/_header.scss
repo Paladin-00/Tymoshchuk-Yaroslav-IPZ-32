@@ -99,4 +99,167 @@
             }
         }
     }
+
+    &__menu-btn {
+        display: none;
+    }
+    .mob-menu{
+        display: none;
+    }
 }
+
+
+@media (max-width: 768px) {
+    .header {
+        .container {
+            flex-wrap: wrap;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        &__nav {
+            margin-left: 88px;
+
+            &-list {
+                gap: 50px;
+            }
+        }
+
+        &__contact {
+            &-list {
+                margin-left: auto;
+                flex-direction: column; // Перетворюємо список на вертикальний
+                gap: 16px; // Відстань між елементами списку
+                align-items: flex-start; // Вирівнювання по лівому краю
+            }
+            &-link {
+                font-size: 12px;
+            }
+        }
+        &__menu-btn {
+            display: none;
+        }
+        .mob-menu{
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        .header__nav,
+        .header__contact-list {
+           display: none; // Ховаємо основне меню
+        }
+        .header__menu-btn {
+            display: block; // Відображаємо кнопку меню
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 1100;
+            margin-left: auto;
+        }
+      
+        .mob-menu {
+            display: none; // Ховаємо меню за замовчуванням
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+            padding: 48px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            // overflow-y: auto;
+      
+            &.active {
+              display: block; // Відображаємо меню, коли активне
+            }
+      
+            &__close-btn {
+              position: absolute;
+              top: 16px;
+              right: 16px;
+              background: none;
+              border: none;
+              font-size: 24px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            &__nav {
+                margin-bottom: 306px;
+            }
+            
+            &__link{
+                color: black;
+                font-size: 40px;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+                 
+                &:hover, 
+                &:focus {
+                  color: #007BFF; // Зміна кольору при ховері та фокусі
+                }
+        
+            }
+
+
+            &__contacts {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                margin-bottom: 64px;
+            }
+
+            &__contact-link {
+                color: $medium-gray;
+                font-size: 24px;
+                letter-spacing: 0.02em;
+                font-weight: 500;
+                &:hover, 
+                &:focus {
+                   color: $blue;
+                }
+            
+            }
+            &__contact-item .tel{
+                font-size: 34px;
+                color: $blue;
+            }
+
+
+
+            &__socials {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                & + &::before {
+                content: "|";
+                color: #757575;
+                opacity: 20%;
+                font-size: 22px;
+                margin-right: 15px;
+                text-align: center;
+                width: 0;
+                line-height: 1;
+            }
+            }
+            &__social-link {
+                color: $blue;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 1.22em;
+				letter-spacing: 0.02em;
+            }
+        
+        }
+    }
+}
+  

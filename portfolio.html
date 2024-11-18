@@ -12,34 +12,100 @@
     <script src="jstest.js"></script>
 </head>
 <body>
-<header class="header"> 
-    <div class="container">
-        <a href="index.html" class="header__logo">
-            <img src="images/webstudio.svg" width="145" height="31" alt="webstudio">
-        </a>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Студія</a></li>
-                <li class="header__nav-item"><a href="portfolio.html" class="header__nav-link">Портфоліо</a></li>
-                <li class="header__nav-item"><a href="#" class="header__nav-link">Контакти</a></li>
+    <header class="header"> 
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <img src="images/webstudio.svg" width="145" height="31" alt="webstudio">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Студія</a></li>
+                    <li class="header__nav-item"><a href="portfolio.html" class="header__nav-link">Портфоліо</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="header__contact-list">
+                <li class="header__contact-item">
+                    <a href="mailto:info@devstudio.com" class="header__contact-link">
+                        <svg width="16" height="12"><use href="./images/icons.svg#icon-email"></use></svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="header__contact-item">
+                    <a href="tel:+380111111111" class="header__contact-link">
+                        <svg width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>
+                        +380111111111
+                    </a>
+                </li>
             </ul>
-        </nav>
-        <ul class="header__contact-list">
-            <li class="header__contact-item">
-                <a href="mailto:info@devstudio.com" class="header__contact-link">
-                    <svg width="16" height="12"><use href="./images/icons.svg#icon-email"></use></svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="header__contact-item">
-                <a href="tel:+380111111111" class="header__contact-link">
-                    <svg width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>
-                    +380111111111
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
+            <button class="header__menu-btn" mob-menu-open>
+                <svg width="24" height="16">
+                    <use href="./images/icons.svg#icon-humb-menu"></use>
+                </svg>
+            </button>
+            <div class="mob-menu" mob-menu>
+                <button class="mob-menu__close-btn" mob-menu-close>
+                    <svg class="mob-menu__icon-close" width="11" height="11">
+                        <use href="./images/icons.svg#cross-icon"></use>
+                    </svg>
+                </button>
+                <nav class="mob-menu__nav">
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item"><a href="index.html" class="mob-menu__link">Студія</a></li>
+                        <li class="mob-menu__item"><a href="portfolio.html" class="mob-menu__link">Портфоліо</a></li>
+                        <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="mob-menu__contacts">
+                    <li class="mob-menu__contact-item">
+                        <a href="tel:+380111111111" class="mob-menu__contact-link tel">
+                            +380111111111
+                        </a>
+                    </li>
+                    <li class="mob-menu__contact-item">
+                        <a href="mailto:info@devstudio.com" class="mob-menu__contact-link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    
+                </ul>
+                <ul class="mob-menu__socials">
+                    <li class="mob-menu__social-item">
+                        <a href="#" class="mob-menu__social-link">Instagram</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="http:#" class="mob-menu__social-link">Twitter</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="#" class="mob-menu__social-link">Facebook</a>
+                    </li>
+                    <li class="mob-menu__social-item">
+                        <a href="#" class="mob-menu__social-link">Linkedin</a>
+                    </li>
+                </ul>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const menuBtn = document.querySelector('.header__menu-btn'); // Кнопка відкриття меню
+                        const mobMenu = document.querySelector('.mob-menu'); // Мобільне меню
+                        const closeBtn = document.querySelector('.mob-menu__close-btn'); // Кнопка закриття меню
+            
+                        // Відкрити мобільне меню
+                        menuBtn.addEventListener('click', () => {
+                            mobMenu.classList.add('active'); // Додаємо клас для відображення меню
+                            menuBtn.style.display = 'none'; // Ховаємо кнопку меню
+                        });
+            
+                        // Закрити мобільне меню
+                        closeBtn.addEventListener('click', () => {
+                            mobMenu.classList.remove('active'); // Забираємо клас для приховування меню
+                            menuBtn.style.display = 'block'; // Відображаємо кнопку меню
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        
+    </header>
     <main>
         <section class="portfolio">
         <div class="container">

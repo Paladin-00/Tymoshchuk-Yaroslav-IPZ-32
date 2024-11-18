@@ -143,3 +143,102 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 60px;
+            column-gap: 165px;
+        }
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        &__subscribe {
+            width: 450px; 
+            display: flex;
+            flex-direction: column; // Вертикальне вирівнювання
+            align-items: center; // Центруємо по горизонталі
+            text-align: center; // Центруємо текст всередині
+            &-form {
+                width: 100%; // Форму адаптуємо до ширини
+                display: flex;
+                flex-direction: column; // Вертикальне розташування елементів
+                align-items: center; // Центруємо по горизонталі
+
+                input[type="email"] {
+                    width: 80%; // Зменшуємо ширину інпуту на мобільних
+                    font-size: 16px;
+                    padding: 13px 16px;
+                    border: 1px solid;
+                    border-radius: 4px;
+                }
+            }
+
+            &-text {
+                padding-top: 0;
+                font-size: 14px;
+                color: $white;
+            }
+
+            &__sub {
+                margin-top: 15px; // Відступ для кнопки
+            }
+        }
+
+        &__media {
+            &-text {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .footer {
+        .container {
+            flex-direction: column;  // Встановлюємо колоночне вирівнювання
+            gap: 20px;  // Зменшуємо відстань між елементами
+        }
+
+        &__media,
+        &__address {
+            text-align: center;  // Центруємо контент в кожному з блоків
+        }
+
+        &__subscribe {
+            text-align: center;
+            margin-top: 20px;  // Відступ зверху
+        }
+
+        .footer__container, .footer__media {
+            display: flex;
+            flex-direction: column; // 2 на 1
+        }
+
+        .footer__media-list {
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}

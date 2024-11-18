@@ -80,3 +80,55 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    .team {
+        padding: 60px 0; 
+
+        &__title {
+            font-size: 28px; 
+
+        }
+        &__list {
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            justify-content: center; 
+        }
+
+        &__member {
+            width: 100%; 
+
+            img {
+                width: 100%; 
+                height: 374px; 
+                object-fit: cover; 
+                border-radius: 4px; 
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .team {
+        &__list {
+            display: grid; 
+            grid-template-columns: repeat(1, 1fr); 
+            justify-content: center; 
+        }
+
+        &__member {
+            width: 100%; 
+
+            img {
+                width: 100%; 
+                height: 460px; 
+                object-fit: cover; 
+                border-radius: 4px; 
+            }
+        }
+    }
+}
