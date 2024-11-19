@@ -31,7 +31,8 @@
             transition: color $transition;
 
             &:hover,
-            &:focus {
+            &:focus,
+            &.active {
                 color: $blue;
             }
 

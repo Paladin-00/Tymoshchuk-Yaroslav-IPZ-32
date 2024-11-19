@@ -24,7 +24,8 @@
         transition: color $transition, background-color $transition, box-shadow $transition;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &.active {
             cursor: pointer;
             background-color: $blue;
             color: $white;

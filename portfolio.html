@@ -110,14 +110,14 @@
         <section class="portfolio">
         <div class="container">
             <ul class="portfolio__filter">
-                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button">Усі</button></li>
-                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button">Веб-сайти</button></li>
-                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button">Додатки</button></li>
-                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button">Дизайн</button></li>
-                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button">Маркетинг</button></li>
+                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button" data-filter="all">Усі</button></li>
+                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button" data-filter="website">Веб-сайти</button></li>
+                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button" data-filter="addition">Додатки</button></li>
+                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button" data-filter="design">Дизайн</button></li>
+                <li class="portfolio__filter-item"><button type="button" class="portfolio__filter-button" data-filter="marketing">Маркетинг</button></li>
             </ul>
             <ul class="portfolio__list">
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="website">
                     <img src="images/website-1.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -128,7 +128,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="design">
                     <img src="images/design-1.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -139,7 +139,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="addition">
                     <img src="images/addition-1.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -150,7 +150,7 @@
                     </div>
                 </li>
 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="marketing">
                     <img src="images/marketing-1.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -161,7 +161,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="addition">
                     <img src="images/addition-2.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -172,7 +172,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="website">
                     <img src="images/website-2.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -183,7 +183,7 @@
                     </div>
                 </li>
 
-		<li class="portfolio__item image-overlay">
+		<li class="portfolio__item image-overlay" data-category="design">
                     <img src="images/design-2.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -194,7 +194,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="marketing">
                     <img src="images/marketing-2.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -205,7 +205,7 @@
                     </div>
                 </li>
                 
-                <li class="portfolio__item image-overlay">
+                <li class="portfolio__item image-overlay" data-category="addition">
                     <img src="images/addition-3.jpg" width="370" height="294" alt="вебсайт" class="portfolio__image">
                     <div class="portfolio__overlay">
                         <p class="portfolio__overlay-text">Ресурс пропонує комплексні пропозиції...</p>
@@ -247,6 +247,33 @@
                     <svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin-1"></svg>
                     </a></li>
             </ul>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const filterButtons = document.querySelectorAll('.portfolio__filter-button');
+                const portfolioItems = document.querySelectorAll('.portfolio__item');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const filter = button.getAttribute('data-filter');
+
+                        // Активний стан кнопки
+                        document.querySelector('.portfolio__filter-button.active')?.classList.remove('active');
+                        button.classList.add('active');
+
+                        // Фільтрація карток
+                        portfolioItems.forEach(item => {
+                            const category = item.getAttribute('data-category');
+                            if (filter === 'all' || category === filter) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+
+            </script>
         </div>
         <div class="footer__subscribe">
             <h3 class="footer__subscribe-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
