@@ -81,3 +81,24 @@
         transform: translateY(0);
     }
 }
+
+
+@media (max-width: 1200px) {
+    .hero {
+        background-size: cover; 
+        padding: 118px 0; 
+        &__text {
+            width: 360px;
+            font-size: 26px; 
+            line-height: 1.4em;
+            margin-bottom: 30px; 
+            max-width: 100%; 
+           
+        }
+    }
+
+    .open {
+        top: 12px;
+        right: 12px;
+    }
+}

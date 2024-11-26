@@ -192,3 +192,21 @@
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
+
+
+@media (max-width: 768px) {
+    .modal {
+        &-content {
+            width: 450px;
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .custom-checkbox {
+        .checkbox-label {
+            font-size: 12px;
+        }
+    }
+}
