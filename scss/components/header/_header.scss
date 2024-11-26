@@ -110,7 +110,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .header {
         .container {
             flex-wrap: wrap;
@@ -147,7 +147,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header {
         .header__nav,
         .header__contact-list {

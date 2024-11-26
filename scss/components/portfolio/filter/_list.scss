@@ -94,7 +94,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .portfolio {
         padding-bottom: 60px;
 
@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .portfolio {
         &__list {
             display: grid; 

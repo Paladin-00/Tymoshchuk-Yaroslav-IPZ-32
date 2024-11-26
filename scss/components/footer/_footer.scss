@@ -86,7 +86,7 @@
     }
 
     &__subscribe {
-        width: 100%;
+        // width: 100%;
         &-form {
             display: flex;
             align-items: center;
@@ -151,7 +151,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .footer {
         text-align: center;
         .container {
@@ -214,7 +214,7 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .footer {
         .container {
             flex-direction: column;  // Встановлюємо колоночне вирівнювання

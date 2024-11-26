@@ -83,23 +83,22 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .hero {
-        background-size: cover; // Зображення автоматично підлаштується під ширину екрану
-        padding: 118px 0; // Зменшуємо вертикальні відступи
-
+        background-size: cover; 
+        padding: 118px 0; 
         &__text {
             width: 360px;
-            font-size: 26px; // Зменшення розміру шрифту
-            line-height: 1.4em; // Зберігаємо читабельність тексту
-            margin-bottom: 30px; // Зменшуємо нижній відступ
-            max-width: 100%; // Забезпечує повну адаптивність
+            font-size: 26px; 
+            line-height: 1.4em;
+            margin-bottom: 30px; 
+            max-width: 100%; 
            
         }
     }
 
     .open {
-        top: 12px; // Адаптуємо позицію для кращого вигляду
+        top: 12px;
         right: 12px;
     }
 }
